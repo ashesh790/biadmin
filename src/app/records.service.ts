@@ -21,3 +21,14 @@ export class RecordsService {
   }
   constructor() { }
 }
+
+export class personData {
+  persons: any = {
+    0: { name: 'A', email: 'name1@gmail.com' },
+    1: { name: 'B', email: 'name2@gmail.com' },
+    2: { name: 'C', email: 'name3@gmail.com' }
+  }
+  getInfoPerson = () => {
+    return this.persons
+  }
+}

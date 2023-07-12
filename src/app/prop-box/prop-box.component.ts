@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { RecordsService } from "../records.service";
+import { RecordsService, personData } from "../records.service";
 @Component({
   selector: 'app-prop-box',
   templateUrl: './prop-box.component.html',
   styleUrls: ['./prop-box.component.css'],
-  providers: [RecordsService]
+  providers: [RecordsService, personData]
 })
 export class PropBoxComponent {
 
   infoReceive1: string[] = [];
   infoReceive2: string[] = [];
   infoReceive3: string[] = [];
-
-  constructor(private rservice: RecordsService) {
+  getInfoPerson1: { [key: string]: { name: string; email: string } } = {};
+  constructor(private rservice: RecordsService, private pdata: personData) {
 
   }
 
@@ -26,6 +26,10 @@ export class PropBoxComponent {
 
   getInforFromServiceClass3() {
     this.infoReceive3 = this.rservice.getInfo3()
+  }
+
+  getPersonData() {
+    this.getInfoPerson1 = this.pdata.getInfoPerson()
   }
   ngOnInit(): void {
 
