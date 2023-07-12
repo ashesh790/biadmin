@@ -1,4 +1,4 @@
-<button (click)="getInforFromServiceClass1()">Employee 1</button>
+<!-- <button (click)="getInforFromServiceClass1()">Employee 1</button>
 <ul class="list-group">
     <li *ngFor="let infor of infoReceive1" class="list-group-item">{{infor}}</li>
 </ul>
@@ -11,7 +11,9 @@
     <li *ngFor="let infor of infoReceive3" class="list-group-item">{{infor}}</li>
 </ul>
 
+<label>Select Employee</label>
 <select class="form-select" (click)="getPersonData()">
     <option value="">Select Data</option>
-    <option *ngFor="let person of getInfoPerson1 | keyvalue" [value]="person.key">{{ person.value.name }}</option>
-</select>
+    <option *ngFor="let person of getInfoPerson1 | keyvalue" [value]="person.key">{{ person.value.name }} | {{
+        person.value.email }}</option>
+</select> -->

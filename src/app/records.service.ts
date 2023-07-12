@@ -3,6 +3,16 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+export class navComponent {
+  navItems: any = {
+    0: { text: "HOME", link: "home" },
+    1: { text: "PROPERTY", link: "property" }
+  }
+
+  getNavbar = () => {
+    return this.navItems
+  }
+}
 export class RecordsService {
   info1: string[] = ["a", "1", "a@gmail.com"]
   info2: string[] = ["b", "2", "b@gmail.com"]
