@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MasterComponent } from './master/master.component';
+import { PropBoxComponent } from './prop-box/prop-box.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MasterComponent,
+    PropBoxComponent
   ],
   imports: [
     BrowserModule,
