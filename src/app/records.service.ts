@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 export class navComponent {
   navItems: any = {
     0: { text: "HOME", link: "home" },
-    1: { text: "PROPERTY", link: "property" }
+    1: { text: "PROPERTY", link: "property" },
+    2: { text: "LIKED PROPERTY", link: "liked_property" }
   }
 
   getNavbar = () => {
