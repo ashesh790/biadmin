@@ -10,7 +10,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item" *ngFor="let nav of getNavItemsName | keyvalue">
-                    <a class="nav-link active" aria-current="page" [href]="nav.value.link">{{nav.value.text}}</a>
+                    <a class="nav-link active" aria-current="page" routerLink="nav.value.link">{{nav.value.text}}</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/login" routerLinkActive="active">Box</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/services"
+                        routerLinkActive="active">1Box</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
