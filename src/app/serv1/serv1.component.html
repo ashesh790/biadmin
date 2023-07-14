@@ -1,0 +1,12 @@
+<div class="container">
+    <form #frm="ngForm">
+        <input class="form-control" name="location" ngModel placeholder="Enter something">
+        <button name="button" (click)="addInfoEmp(frm)">Add Location</button>
+    </form>
+    <button class="btn btn-primary" (click)="getInfo1()">Information 1 </button>
+    <p *ngFor="let i of inforReceive1">{{i}}</p>
+    <button class="btn btn-primary" (click)="getInfo2()">Information 2 </button>
+    <p *ngFor="let i of inforReceive2">{{i}}</p>
+    <button class="btn btn-primary" (click)="getInfo3()">Information 3 </button>
+    <p *ngFor="let i of inforReceive3">{{i}}</p>
+</div>

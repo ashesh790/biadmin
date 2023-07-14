@@ -43,3 +43,29 @@ export class personData {
     return this.persons
   }
 }
+
+export class inforReceive {
+  info1: string[] = ["a", "1"]
+  info2: string[] = ["b", "2"]
+  info3: string[] = ["c", "3"]
+
+  get_info_1(): string[] {
+    return this.info1
+  }
+
+  get_info_2(): string[] {
+    return this.info2
+  }
+
+  get_info_3(): string[] {
+    return this.info3
+  }
+
+  addInfo(info: string) {
+    this.info1.push(info)
+    this.info2.push(info)
+    this.info3.push(info)
+    return this.info1
+  }
+  constructor() { }
+}
